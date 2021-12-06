@@ -16,12 +16,6 @@ var MainMenuState = {
             game.state.start('GameState');
         }, this, 'button_play', 'button_play');
         this.play.anchor.setTo(0.5);
-
-        this.shop = game.add.button(game.world.width - 100, 600, 'menu', function(){
-            this.shop.kill();
-            this.prepareShop();
-        }, this, 'button_shop', 'button_shop');
-        this.shop.anchor.setTo(0.5);
         
         new AudioSwitch({
             x: game.world.width - 40,
