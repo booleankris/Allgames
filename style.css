@@ -22,7 +22,6 @@ html, body, canvas {
 	background-color: #f0f0f0;
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	color: black;
-	
 }
 
 #notSupportedTitle {
@@ -43,3 +42,11 @@ html, body, canvas {
 	src: url('fonts/montserrat-medium.ttf') format('truetype');
 }
 
+*:not(input):not(textarea) {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
